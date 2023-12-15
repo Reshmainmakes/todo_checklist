@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>To-Do Checklist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:white;">
+  <div class="todo-container">
+    <h2 style="color:purple" align="center">
+        <img src="img.png" alt="our products" width="80" height="80">
+        Transition Checklist</h2>
+    <table id="todo-table">
+      <style>table {
+
+  border-collapse: collapse;
+  margin-left: auto;
+margin-right: auto;
+}
+
+th, td {
+  border: 1px solid black;
+    text-align: center;
+  /* center checkbox horizontally */
+  vertical-align: middle;
+  /* center checkbox vertically */
+}
+img
+{
+margin-left:0px;
+margin-right:0px;
+margin-top:30px;
+}
+h2
+{
+line-height:0px;
+margin-left: 3px;
+margin-right: 45px;
+}
+</style>
+      <thead>
+        <tr>
+            <th>FOH/BOH</th>
+          <th>To Do</th>
+          <th>Team Member</th>
+          <th>Team Lead</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be dynamically added here -->
+        <td rowspan="10">FOH</td>
+
+      <tr>
+          <td>Ensure there is at least 4 of each patty</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Clean all remaining dishes</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Clean all counters</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Clean all blending stations</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Stock up the dip box</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Stock milks in small fridge</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Blend dates</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Replenish bowl toppings</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Take out trash</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+
+
+
+      <td rowspan="10">BOH</td>
+
+      <tr>
+          <td>Clean Juicer</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Help FOH with cleaning dishes (If neccesary)</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Jam fruit for freezer</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Organize fridges and freezers</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Clean off tables</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+      <tr>
+          <td>Take out trash</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<br>
+<center>
+<form action="{% url 'add' %}">
+    <button type="submit" class="button">Home</button>
+  </form>
+</center>
+</html>

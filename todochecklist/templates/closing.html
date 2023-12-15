@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>To-Do Checklist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:white;">
+
+  <div class="todo-container">
+    <h2 style="color:purple" align="center">
+
+      <img src="img.png" width="80" height="80" alt="My Image" />
+        Closing Checklist</h2>
+    <table id="todo-table">
+      <style>table {
+
+  border-collapse: collapse;
+  margin-left: auto;
+margin-right: auto;
+}
+
+th, td {
+  border: 1px solid black;
+    text-align: center;
+  /* center checkbox horizontally */
+  vertical-align: middle;
+  /* center checkbox vertically */
+}
+img
+{
+margin-left: 0px;
+margin-right:0px;
+margin-top:30px;
+}
+h2
+{
+margin-left:0px;
+margin-right:165px;
+}
+</style>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Task</th>
+          <th>Completed</th>
+            <th>Done By</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be dynamically added here -->
+        <tr>
+          <td  rowspan = "2">6:00 PM - 6:20 PM</td>
+            <td>Jam any fruits needed</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text">
+          <tr>
+            <td>Clean the bottom of ALL fridges and freezers in both BOH and FOH areas</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+
+
+        </tr>
+
+        <tr>
+          <td rowspan = "2">6:20 PM - 6:40 PM</td>
+            <td>Stock the mini fridge in FOH with milks and fruits</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text">
+          <tr>
+            <td>Clean and restock bowl toppings section</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+        </tr>
+        <tr>
+          <td rowspan = "2">6:40 PM - 7:00 PM</td>
+            <td>Restock add ons, cups, lids, straws, spoons</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text">
+          <tr>
+            <td>Clean, throw out the trash and restock the bathroom</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+
+        </tr>
+        <tr>
+          <td rowspan = "2">7:00 PM - 7:20 PM</td>
+            <td>Sweep the FOH and BOH</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text">
+          <tr>
+            <td>Clean and restock the MTO juice fridge.</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+        </tr>
+        <tr>
+          <td rowspan = "2">7:20 PM - 7:40 PM</td>
+            <td> Clean blenders and lid enclosures. (Leave one blender operational)</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text">
+          <tr>
+            <td>Wipe down tables and counter tops</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+        </tr>
+        <tr>
+          <td rowspan = "4">7:40 PM - 8:00 PM</td>
+            <td>Clean the juicing area and start breaking down the juicer</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="text"></td>
+          <tr>
+            <td>Clean ﬂoor drains by the sink</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+          <td>Wash Dishes</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text"></td>
+          <tr>
+            <td>Mop the BOH</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+        </tr>
+
+        <tr>
+          <td>8:00 PM</td>
+            <td>Lock the front and back doors</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+          <td><input type="text"></td>
+        </tr>
+
+
+      <tr>
+          <td rowspan = "3">8:00 PM - 8:20 PM</td>
+
+            <td>Mop the FOH</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            <tr>
+          <td>Throw out the trash</td>
+        <td><input type="checkbox" class="task-checkbox"></td>
+        <td><input type="text"></td>
+        </tr>
+          <tr>
+            <td>Put the dishes in their designated area</td>
+            <td><input type="checkbox" class="task-checkbox"></td>
+            <td><input type="text"></td>
+            </tr>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<br>
+<center>
+<form action="{% url 'add' %}">
+    <button type="submit" class="button">Home</button>
+  </form>
+</center>
+</html>

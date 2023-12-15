@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+
+
+
+  </style>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body style="background-color:white;">
+
+
+
+
+
+
+
+  <div class="todo-container">
+    <h2 style="color:purple">
+
+
+     <img src="img.png" width="80" height="80" alt="My Image" />
+      Opening Checklist
+    </h2>
+    <h5 style="color:black" align="center">
+To be completed by manager or key holder
+    </h5>
+    <table id="todo-table">
+<style>table {
+
+  border-collapse: collapse;
+  margin-left: auto;
+margin-right: auto;
+}
+
+th, td {
+  border: 1px solid black;
+    text-align: center;
+  /* center checkbox horizontally */
+  vertical-align: middle;
+  /* center checkbox vertically */
+}
+h5
+{
+line-height:10px;
+}
+h2
+{
+line-height:0px;
+margin-left: 333px;
+margin-right: 25px;
+}
+img
+{
+margin-left: 210px;
+margin-right:25px;
+margin-top:30px;
+}
+
+</style>
+
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Come in,lock door behind you and turn off alarm</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Turn on light</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Turn on the oven in BOH-Cook 6 each of the patties</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Count safe and registers-set up and assign registers to team members</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Set up orange juice machine</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Set up the add-on a dipbox station</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Set up the pour station</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Set up 3 compartments sinks in BOH</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Fill and place sanitizer buckets on front line</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Complete temperature log for all refrigerators,freezers and warmer</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Check mini fridge and cold pressed cooler for day dots.Expired product?</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Turn on TVs in the dining room and menu</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <tr>
+          <td>Unlock doors</td>
+          <td><input type="checkbox" class="task-checkbox"></td>
+        </tr>
+        <!-- Add more rows for additional tasks -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<br>
+<center>
+<form action="{% url 'add' %}">
+    <button type="submit" class="button">Home</button>
+  </form>
+</center>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <br>
+    <center>
+          <img src="img.png" alt="our products" width="80" height="80">
+    </center>
+
+
+<title>Index Page</title>
+
+</head>
+<body  >
+
+<style>
+    button {
+   padding: 15px 40px;
+}
+body{
+
+  background-color:white;
+}
+button
+{
+color:#85144B;
+}
+</style>
+
+    <form action="{% url 'opening' %}">
+
+        <br>
+        <center>
+        <button type="submit" class="btn btn-primary" data-toggle="button"> Opening Checklist </button>
+        </center>
+    </form>
+    <br>
+     <form action="{% url 'restroomcleaning' %}">
+
+         <center>
+        <button type="submit" class="btn btn-success" data-toggle="button">Restroom Cleaning Checklist </button>
+
+    </form>
+            </center>
+
+<br>
+    <form action="{% url 'transition' %}">
+
+        <center>
+        <button type="submit" class="btn btn-warning" data-toggle="button"> Trasition Checklist </button>
+            </center>
+    </form>
+    <br>
+    <form action="{% url 'closing' %}">
+<center>
+       <button type="submit" class="btn btn-light" data-toggle="button"> Closing Checklist </button>
+    </center>
+    </form>
+
+
+
+
+
+
+<!--        </form>-->
+
+
+</body>
+</html>
